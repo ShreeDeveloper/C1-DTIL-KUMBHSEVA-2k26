@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#9b3d16"><title>KUMBHSEVA-2K26|DTIL-RHSCOE|EXTC|</title>
+<style>
+:root{--saffron:#a94718;--gold:#f6c453;--ink:#24211f;--paper:#fffaf1;--green:#176b50;--red:#a82e2e}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#fff8ed;color:var(--ink)}
+header{background:linear-gradient(135deg,#7b2d13,#c65a1b);color:white;padding:24px 16px 20px}
+.wrap{max-width:980px;margin:auto}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+h1{font-size:clamp(1.5rem,4vw,2.4rem);margin:6px 0}.sub{opacity:.92;margin:0}.pill{border:1px solid #ffffff80;border-radius:30px;padding:8px 12px;background:#ffffff16;color:white}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}nav button{border:0;border-radius:12px;padding:11px 13px;background:#fff1d7;color:#542410;font-weight:700;cursor:pointer}
+main{max-width:980px;margin:18px auto;padding:0 14px 30px}.notice{background:#fff0c9;border-left:5px solid #e3a626;padding:12px 14px;border-radius:10px;margin-bottom:16px}
+.hero{background:white;border:1px solid #f0ddc8;border-radius:18px;padding:20px;box-shadow:0 5px 18px #5529000c}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:14px}
+.card{background:white;border:1px solid #eedbc7;border-radius:16px;padding:16px}.card h3{margin:4px 0 8px}.emoji{font-size:1.8rem}
+button,.btn{cursor:pointer}.action{border:0;background:var(--saffron);color:white;padding:11px 14px;border-radius:10px;font-weight:700;text-decoration:none;display:inline-block}
+.secondary{border:1px solid #d8b99e;background:#fff9f0;color:#713214;padding:10px 12px;border-radius:10px;font-weight:650}
+select,input,textarea{width:100%;padding:12px;border:1px solid #cdb9a4;border-radius:10px;font:inherit;background:white;margin:5px 0 12px}
+label{font-weight:650;font-size:.94rem}section[hidden]{display:none}.tag{display:inline-block;padding:5px 9px;border-radius:30px;background:#e8f4ec;color:#176b50;font-size:.83rem;font-weight:700}
+.danger{background:#fff0ee;border-color:#e7c0bb}.muted{color:#685e55;font-size:.92rem}.list{padding-left:20px}.facility{display:flex;justify-content:space-between;gap:10px;align-items:center;border-bottom:1px solid #f0e4d7;padding:12px 0}.facility:last-child{border:0}
+footer{text-align:center;color:#74675d;font-size:.85rem;padding:22px}
+#video{width:100%;max-width:420px;border-radius:14px;background:#211a17;display:block;margin:10px auto}
+#qroutput img{max-width:230px;width:100%;height:auto;margin-top:12px}
+@media(min-width:700px){.hero{padding:26px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="top"><div><div>🪔 Nashik • Trimbakeshwar</div><h1 id="title">KUMBHSEVA-2K26 e-Assistance Portal</h1><p class="sub" id="tagline">A simple guide to facilities, safety and help</p></div>
+<select id="lang" aria-label="Language" style="width:auto;min-width:130px;margin:0"><option value="en">English</option><option value="mr">मराठी</option><option value="hi">हिन्दी</option></select></div>
+<nav aria-label="Main navigation">
+<button onclick="show('home')" id="navhome">🏠 Home</button><button onclick="show('facilities')" id="navfac">🚰 Facilities</button><button onclick="show('safety')" id="navsafe">🛡️ Safety</button><button onclick="show('help')" id="navhelp">🆘 Help</button><button onclick="show('routes')" id="navroute">🧭 Route guide</button><button onclick="show('qr')" id="navqr">▦ QR code</button>
+</nav></div></header>
+<main>
+<div class="notice" id="notice"><strong>Prototype notice:</strong> Locations and crowd status shown here are sample/demo data, not official live information. In an emergency, contact local authorities.</div>
+<section id="home">
+<div class="hero"><span class="tag" id="offlineTag">Lightweight • Mobile-friendly</span><h2 id="welcome">Welcome, pilgrim</h2><p id="welcomeText">Find basic facilities, review safety tips, and see help information from one place.</p><div class="grid">
+<div class="card"><div class="emoji">🚰</div><h3 id="waterTitle">Water & toilets</h3><p id="waterText">Browse sample facility points and their sector notes.</p><button class="secondary" onclick="show('facilities')" id="browseFac">Browse facilities →</button></div>
+<div class="card"><div class="emoji">🛡️</div><h3 id="safeTitle">Stay safe</h3><p id="safeText">Quick crowd-safety reminders for busy areas.</p><button class="secondary" onclick="show('safety')" id="readSafe">Read safety tips →</button></div>
+<div class="card"><div class="emoji">🆘</div><h3 id="helpTitle">Need help?</h3><p id="helpText">See emergency contact options and record a lost-person note on this device.</p><button class="secondary" onclick="show('help')" id="getHelp">Get help →</button></div>
+</div></div>
+<div class="grid"><div class="card"><h3>📶 Offline-friendly use</h3><p class="muted">After you open this site once, use your browser’s “Add to Home screen” option where available. This simple version stores lost-person notes only in this browser; it does not send them to authorities.</p></div><div class="card"><h3>ℹ️ Project team</h3><p>FE ENTC • GES R. H. Sapat College of Engineering, Nashik</p><p class="muted">Rushikesh (13), Shreerang (15), Mohit Deore (16), Kartik (18)</p></div></div>
+</section>
+<section id="facilities" hidden><div class="hero"><h2 id="facHeading">Facilities locator</h2><p class="muted" id="facDesc">Demo directory only. Confirm locations with official on-ground signs.</p><label for="filter" id="filterLabel">Filter facilities</label><select id="filter" onchange="renderFacilities()"><option value="all">All facilities</option><option value="Water">Drinking water</option><option value="Toilet">Toilets</option><option value="First aid">First aid</option><option value="Help desk">Help desk</option></select><div id="facilityList"></div></div></section>
+<section id="safety" hidden><div class="hero"><h2 id="safeHeading">Crowd safety</h2><p><span class="tag">Demo status: Information only</span></p><p id="crowdText">Crowd conditions are not connected to a live control room.</p><ul class="list" id="safetyList"><li>Follow official police and organiser instructions.</li><li>Do not push; move with the crowd and keep children close.</li><li>Agree on a meeting point with your group.</li><li>If an area is blocked, do not cross barricades; follow signed diversions.</li><li>Keep drinking water and essential medicines with you.</li></ul></div></section>
+<section id="help" hidden><div class="hero"><h2 id="helpHeading">Emergency & lost-person help</h2><div class="card danger"><h3>🚨 Immediate danger</h3><p>Use verified local emergency services or approach uniformed police/official help desks. Do not rely on this student prototype for emergency dispatch.</p><a class="action" href="tel:112">Call India emergency number 112</a><p class="muted">Phone calls need mobile service. Check the number and local arrangements with official sources.</p></div>
+<h3>Lost-person note (saved on this device only)</h3><p class="muted">This form does not transmit or register a report with police. Share information directly with an official help desk.</p>
+<form id="lostForm"><label for="person">Person’s name / description</label><input id="person" required maxlength="120" placeholder="Name or brief description"><label for="lastseen">Last seen location / sector</label><input id="lastseen" required maxlength="160" placeholder="Landmark or sector"><label for="contact">Your contact number (optional)</label><input id="contact" inputmode="tel" maxlength="30" placeholder="Phone number"><button class="action" type="submit">Save note on this device</button> <button class="secondary" type="button" onclick="clearNotes()">Clear saved notes</button></form><div id="formMsg" aria-live="polite"></div><div id="savedNotes"></div></div></section>
+<section id="routes" hidden><div class="hero"><h2 id="routeHeading">Simple route guide</h2><p class="muted">Schematic demo only — not GPS navigation. Follow current official signs and barricades.</p><div class="grid"><div class="card"><div class="emoji">🚰</div><h3>Water point (demo)</h3><p>Sample point A • confirm on site</p></div><div class="card"><div class="emoji">➜</div><h3>Follow marked path</h3><p>Use official route signs; do not enter restricted areas.</p></div><div class="card"><div class="emoji">🏥</div><h3>First-aid desk (demo)</h3><p>Sample point B • ask officials for nearest open centre.</p></div></div></div></section>
+<section id="qr" hidden><div class="hero"><h2>QR code for your website</h2><p>Once this site is published online, paste its public HTTPS address here to create a QR code. Anyone scanning it can open the published website. A QR code cannot make a local file public by itself.</p><label for="siteUrl">Published website URL</label><input id="siteUrl" type="url" placeholder="https://your-site.example" autocomplete="url"><button class="action" onclick="makeQR()">Generate QR code</button><div id="qroutput" aria-live="polite"></div><p class="muted">QR image generation requires internet. For offline presentation, publish first and download/print the QR image. Never print a QR code with an unverified URL.</p></div></section>
+</main><footer>V1.1 | Student prototype • Verify all emergency information and facility locations with official authorities.</footer>
+<script>
+const facilities=[
+ {type:"Water",name:"Drinking water point A",sector:"Demo sector A",note:"Sample entry — verify on site"},
+ {type:"Toilet",name:"Public toilet block A",sector:"Demo sector A",note:"Sample entry — verify on site"},
+ {type:"First aid",name:"First-aid help point",sector:"Demo sector B",note:"Sample entry — verify on site"},
+ {type:"Help desk",name:"Information / help desk",sector:"Demo sector B",note:"Sample entry — verify on site"},
+ {type:"Water",name:"Drinking water point B",sector:"Demo sector C",note:"Sample entry — verify on site"}
+];
+function renderFacilities(){const f=document.getElementById('filter').value;document.getElementById('facilityList').innerHTML=facilities.filter(x=>f==='all'||x.type===f).map(x=>`<div class="facility"><div><strong>${x.name}</strong><div class="muted">${x.type} • ${x.sector}</div><div class="muted">${x.note}</div></div><span>📍</span></div>`).join('')}
+function show(id){document.querySelectorAll('main section').forEach(s=>s.hidden=s.id!==id);window.scrollTo({top:0,behavior:'smooth'});if(id==='help')renderNotes()}
+const translations={
+ mr:{title:"कुंभमेळा सहाय्य वेबसाइट",tagline:"सुविधा, सुरक्षितता आणि मदतीसाठी सोपे मार्गदर्शन",navhome:"🏠 मुख्यपृष्ठ",navfac:"🚰 सुविधा",navsafe:"🛡️ सुरक्षितता",navhelp:"🆘 मदत",navroute:"🧭 मार्गदर्शक",navqr:"▦ QR कोड",welcome:"भाविकांचे स्वागत",welcomeText:"मूलभूत सुविधा शोधा, सुरक्षिततेच्या सूचना वाचा आणि मदतीची माहिती एका ठिकाणी पाहा.",facHeading:"सुविधा शोधा",facDesc:"ही नमुना यादी आहे. प्रत्यक्ष ठिकाणी अधिकृत फलक तपासा.",safeHeading:"गर्दीत सुरक्षितता",helpHeading:"आपत्कालीन व हरवलेल्या व्यक्तीसाठी मदत",routeHeading:"सोपे मार्गदर्शन",filterLabel:"सुविधा निवडा"},
+ hi:{title:"कुंभ मेला सहायता वेबसाइट",tagline:"सुविधाओं, सुरक्षा और सहायता के लिए सरल मार्गदर्शिका",navhome:"🏠 होम",navfac:"🚰 सुविधाएँ",navsafe:"🛡️ सुरक्षा",navhelp:"🆘 सहायता",navroute:"🧭 मार्ग",navqr:"▦ QR कोड",welcome:"श्रद्धालुओं का स्वागत है",welcomeText:"बुनियादी सुविधाएँ खोजें, सुरक्षा सुझाव पढ़ें और सहायता की जानकारी एक जगह देखें।",facHeading:"सुविधाएँ खोजें",facDesc:"यह नमूना सूची है। स्थल पर आधिकारिक संकेतों की पुष्टि करें।",safeHeading:"भीड़ में सुरक्षा",helpHeading:"आपातकालीन और खोए व्यक्ति की सहायता",routeHeading:"सरल मार्गदर्शिका",filterLabel:"सुविधा चुनें"}
+};
+const baseText={en:{title:"Kumbh Mela Assistance",tagline:"A simple guide to facilities, safety and help",navhome:"🏠 Home",navfac:"🚰 Facilities",navsafe:"🛡️ Safety",navhelp:"🆘 Help",navroute:"🧭 Route guide",navqr:"▦ QR code",welcome:"Welcome, pilgrim",welcomeText:"Find basic facilities, review safety tips, and see help information from one place.",facHeading:"Facilities locator",facDesc:"Demo directory only. Confirm locations with official on-ground signs.",safeHeading:"Crowd safety",helpHeading:"Emergency & lost-person help",routeHeading:"Simple route guide",filterLabel:"Filter facilities"}};
+function setLang(){let lang=document.getElementById('lang').value,t=translations[lang]||baseText.en;for(let k in t){let el=document.getElementById(k);if(el)el.textContent=t[k]}document.documentElement.lang=lang==='mr'?'mr':lang==='hi'?'hi':'en';}
+document.getElementById('lang').addEventListener('change',setLang);
+document.getElementById('lostForm').addEventListener('submit',e=>{e.preventDefault();let notes=JSON.parse(localStorage.getItem('kumbhNotes')||'[]');notes.unshift({person:document.getElementById('person').value,lastseen:document.getElementById('lastseen').value,contact:document.getElementById('contact').value,time:new Date().toLocaleString()});localStorage.setItem('kumbhNotes',JSON.stringify(notes.slice(0,10)));document.getElementById('formMsg').textContent='Saved only in this browser. No report was sent to authorities.';e.target.reset();renderNotes()});
+function renderNotes(){let n=JSON.parse(localStorage.getItem('kumbhNotes')||'[]');document.getElementById('savedNotes').innerHTML=n.length?'<h3>Saved notes on this device</h3>'+n.map(x=>`<div class="card"><strong>${escapeHTML(x.person)}</strong><p>${escapeHTML(x.lastseen)}</p><p>${escapeHTML(x.contact||'No contact given')} • ${escapeHTML(x.time)}</p></div>`).join(''):'<p class="muted">No saved notes.</p>'}
+function clearNotes(){localStorage.removeItem('kumbhNotes');renderNotes();document.getElementById('formMsg').textContent='Saved notes cleared from this browser.'}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function makeQR(){const raw=document.getElementById('siteUrl').value.trim(),out=document.getElementById('qroutput');try{const u=new URL(raw);if(u.protocol!=='https:'&&u.protocol!=='http:')throw Error();out.innerHTML=`<p>QR for: <strong>${escapeHTML(u.href)}</strong></p><img alt="QR code for published website" src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(u.href)}"><p><a class="action" target="_blank" rel="noopener" href="https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=${encodeURIComponent(u.href)}">Open / save QR image</a></p>`}catch(e){out.textContent='Please enter a valid published website URL, including https://'} }
+renderFacilities();renderNotes();
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
